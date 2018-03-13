@@ -8,7 +8,7 @@ return TRUE;
 
 %hook Database
 -(bool) popErrorWithTitle:(id)arg1 forReadList:(pkgSourceList*) {
-arg1 = ;
+arg1 = null;
 return %orig;
 }
 %end
